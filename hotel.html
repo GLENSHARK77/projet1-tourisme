@@ -1,0 +1,114 @@
+<!doctype html>
+  <html lang="fr">
+  <head>
+    <meta charset="UTF-8"> 
+    <title>La ville de Bobo Dioulasso</title>
+    <link rel="stylesheet" href="Style.css">      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>  
+      <div class="logo">
+      <img src="image/12.jpg">
+      </div>
+      <div class="onglet">
+         <ul class="onglet">  
+        <li><a href="acceuil.html">Accueil</a></li>
+         <li><a href="patrimoine.html">Patrimoine</a></li>
+        <li><a href="hotel.html">Reservation</a></li>
+         <li><a href="galerie.html">Galerie</a></li>
+          </ul>
+      </div>
+      </header>
+    <h1>Réservation d'Hôtel</h1>
+  </header>
+  <nav>
+  <div class="infosup">
+    <h2>Veuillez remplir le formulaire ci-dessous pour votre réservation :</h2>
+    <form action="#" method="post">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required><br><br>
+
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" name="prenom" required><br><br>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="telephone">Téléphone :</label>
+      <input type="tel" id="telephone" name="telephone" required><br><br>
+       
+    </div>
+    <div class="infosinf"> 
+    <form action="#" method="post">
+      <label for="Hôtel">Hôtels Disponibles</label>
+      <select id="Hôtel" name="Hôtel" required>
+        
+       <option value=" " disable selected >-- Choisissez un Hôtel --</option>
+        <option value ="Hôtel">IBA Hôtel</option>
+        <option value ="Hôtel">Sissiman Hôtel</option>
+        
+        <option value ="Hôtel">Mermoz Hôtel</option>
+        <option value ="Hôtel">Wifama Hôtel</option>
+        
+      </select>
+      <div class="final">    
+
+      <label for="nb_personnes">Nombre de personnes :</label>
+      <input type="number" id="nb_personnes" name="nb_personnes" min="1" required><br><br>
+
+      <label for="nb_chambre">Nombre de chambres :</label>
+      <input type="number" id="nb_personnes" name="nb_personnes" min="1" required><br><br>
+
+      <label for="date_arrivee">Date d'arrivée :</label>
+      <input type="date" id="date_arrivee" name="date_arrivee" required><br><br>
+        
+      <label for="date_depart">Date de départ :</label>
+      <input type="date" id="date_depart" name="date_depart" required><br><br>
+        
+  <label for="paiement">Mode de paiement :</label>
+  <select id="paiement" name="paiement" required>
+    <option value="" disabled selected>-- Choisissez un mode --</option>
+   <option value="carte">Carte bancaire</option>
+    <option value="mobile">Paiement mobile (Orange Money)</option>
+  </select><br><br>
+         <div>
+      <button type="submit">Réserver</button>
+        </div>        
+      </div>
+    </form>
+ </nav>
+    <script>
+  function redirigerPaiement(event) {
+    event.preventDefault();
+    const mode = document.getElementById("paiement").value;
+    if (mode === "carte") {
+      window.location.href = "paiement-bancaire.html";
+    } else if (mode === "mobile") {
+      window.location.href = "paiement-mobile.html";
+    } else {
+      alert("Veuillez choisir un mode de paiement.");
+    }
+    return false;
+  }
+</script>
+  <footer>
+  <footer class="footer-projet">
+  <div class="footer-colonnes">
+    <div class="colonne">
+      <h3>Réalisé par</h3>
+      <p>KOURAOGO Abdoul kabirou</p>
+      <p>OUEDRAOGO Maoulaye</p>
+      <p>SIGUE Wendpanga Risnata</p>
+    </div>
+    <div class="colonne">
+      <h3>Remerciements</h3>
+      <p>Merci à nos chers Professeurs</p>
+     <p><strong>M. A-A KINDO</strong></p>
+      <p><strong>M. G. ZOUGMORE</strong></p> 
+        <p><strong>M. O. I. TRAORE</strong></p> 
+    </div>
+  </div>
+</footer>
+</body>
+</html>

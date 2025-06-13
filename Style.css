@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: darkslategrey;
+  color: #fff;
+}
+
+header {
+  background: dimgray;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header .onglet ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px
+}
+
+header .onglet ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header .onglet ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+header .onglet ul li a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  padding: 30px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu li {
+  background-color: #000;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 500px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.menu li:hover {
+  transform: scale(1.05);
+}
+
+.blocimg {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.blocimg img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.textcenter {
+  position: absolute;
+  bottom: 15px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.menu p {
+  padding: 15px;
+  font-size: 14px;
+  text-align: justify;
+  background-color: #000;
+  color: white;
+}
+
+footer {
+  background: black;
+}
+.footer-colonnes {
+  background: black;
+  display: flex;
+  justify-content: center;
+}
+
+.colonne {
+  padding: 0 20px;
+}
+
+.colonne:first-child {
+  border-right: 1px dashed #ccc;
+}
+
+.patrimoine {
+  background-color: darkslategrey;
+  padding: 20px;
+  display: flex;
+  justify-content: center; 
+}
+
+.part {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;     
+  gap: 20px; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.part li {
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+}
+
+.part li img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.part li .text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-top: 6px;
+}
+
+input, select, button {
+  width: 75%;
+  margin-top: 4px;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 14px;
+}
+
+.infosup, .infosinf, .final {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.next .nex {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  list-style: none;       
+  padding: 0;              
+}
+
+.next .nex li a {
+  display: inline-block;
+  position: relative;
+  width: 500px;            
+  height: 80px;            
+  overflow: hidden;        
+  text-align: center;  
+}
+
+.next .nex li a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      
+  object-position: center;
+  display: block;        
+}
+
+.next .nex li a .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7); 
+  color: white;
+  text-align: center;
+  padding: 4px;
+  font-size: 12px;
+}
+
+p {
+ padding: 0 50px; 
+ margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1,2rem;
+}
+
+h1, h2, h3 {
+  font-size: 2,5rem;
+  text-align: center;
+ }
+
+.imag{
+  width:200 px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 5px;
+  padding: 10px;
+  border:1px black solid;
+}
+
+.imag img {
+ width: 100%;
+  height: 100%;
+  object-fit: cover;  
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.galerie {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.gal {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.gal li {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 10px;
+}
+
+.gal li:hover {
+  transform: scale(1.05);
+}
+
+.gal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
